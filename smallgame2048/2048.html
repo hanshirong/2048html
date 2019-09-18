@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title> 2048小游戏网页版</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./2048.css" />
+    <script src="./my2048.js"></script>
+</head>
+
+<body>
+    <div id="game">
+    </div>
+    <div class="head clear">
+        <div class="scoreShow left">
+            <span>Score:</span>
+            <span id="score"></span>
+        </div>
+        <div class="selction right" onclick="getModel(event)">
+            
+            <a href="#" class="model" value="4">4X4</a>
+            
+        </div>
+    </div>
+    <div id="gridPanel">
+    </div>
+    <div id="gameover">
+        <h1 id="Score"></h1>
+        <a href="#" id="again" onclick="obj.gameStart()">Try again</a>
+    </div>
+</body>
+
+</html>
